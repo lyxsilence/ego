@@ -1,0 +1,16 @@
+{
+    "code": 200,
+    "msg": "MVBRdfobs0",
+    "result": {
+        "id": 70307,
+        "username": "RFvIeScSLF",
+        "nickname": "l3fzXWfxBK",
+        "sex": 0,
+        "province": 64696,
+        "city": 330200,
+        "district": 330000,
+        "birthday": "2003-12-03",
+        "createTime": 1512369321093,
+        "updateTime": 1512369673638
+    }
+}

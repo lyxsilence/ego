@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta name="description" content="ego" />
+    <meta name="keywords" content="ego" />
+    <title>ego</title>
+    <link href="../common/base.css" rel="stylesheet" />
+    <link href="../page/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 顶栏 -->
+    <div class="g-header">
+        <div class="g-inner">
+            <div class="g-header-lt">
+                <div class="logo">
+                    <a href="/index"><img src="../res/images/logo.png" alt="漫画学园"></a>
+                </div>
+            </div>
+            <div class="g-header-cnt">
+                <div class="m-tabs" id="hdtabs">
+                    <ul class="f-cb">
+                        <li class="z-active"><a href="/index">首页</a></li>
+                        <li><a href="/works">作品</a></li>
+                        <li><a href="">圈子</a></li>
+                        <li><a href="">奇思妙想</a></li>
+                    </ul>
+                    <!-- <div class="tabs_track">
+                        <div class="tabs_thumb" style="width:68px;left:0px;"></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="g-header-rht">
+                <div class="m-sch">
+                    <form id="search">
+                        <div class="u-search">
+                            <input type="text" name="keyword" id="keyword" placeholder="输入搜索内容">
+                            <button type="submit" class="u-icon u-icon-search u-icon-search"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="m-sign" id="guest">
+                    <button class="u-btn u-btn-primary u-btn-icon" id="login">
+                        <i class="u-icon u-icon-user"></i>登录
+                    </button>
+                    <button class="u-btn u-btn-link" id="register">注册</button>
+                </div>
+
+                <div class="m-user f-dn" id="userdropdown">
+                    <div class="user_info">
+                        <span class="user_avatar"><img src="../res/images/avatar.jpg" alt=""></span>
+                        <span class="user_msg">
+                        <span class="user_name" id="name">dadadfjwejfnjbjbfjhh</span>
+                        <span class="u-icon"></span>
+                        </span>
+                        <span class="u-icon u-icon-down"></span>
+                    </div>
+                    <ul class="user_list">
+                        <li>个人中心</li>
+                        <li>信息</li>
+                        <li>设置</li>
+                        <li id="logout">退出账号</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="g-banner">
+        <div class="m-slider">
+            <ul>
+                <li class="slider_img z-active">
+                    <img src="../res/images/banner/banner1.jpg" alt="">
+                </li>
+                <li class="slider_img ">
+                    <img src="../res/images/banner/banner2.jpg" alt="">
+                </li>
+                <li class="slider_img ">
+                    <img src="../res/images/banner/banner3.jpg" alt="">
+                </li>
+            </ul>
+            <ul class="m-cursor">
+                <li data-index="0" class="z-active"></li>
+                <li data-index="1" class=""></li>
+                <li data-index="2" class=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 内容区 -->
+    <div class="g-body f-cb">
+        <!-- 主栏 -->
+        <div class="g-main">
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-diamond"></i> /精选推荐/
+                    <span class="section_more">更多
+                        <i class="u-icon u-icon-right u-icon-moreright"></i>
+                    </span>
+                </h4>
+                <ul class="section_cnt m-list m-list-1 f-cb">
+                    <li><img src="../res/images/main1.jpg" alt=""></li>
+                    <li><img src="../res/images/main2.jpg" alt=""></li>
+                    <li><img src="../res/images/main3.jpg" alt=""></li>
+                    <li><img src="../res/images/main4.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-star"></i> /明日之星/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <ul class="section_cnt m-list m-list-2" id="starlist">
+                    <li class="m-card">
+                        <img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                    <li class="m-card"><img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                    <li class="m-card"><img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                    <li class="m-card"><img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                    <li class="m-card"><img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                    <li class="m-card"><img src="/res/images/圈子3.jpg" alt="t头像">
+                        <div class="card_info">
+                            <div>Grinch</div>
+                            <div><span>作品 377</span><span>粉丝 1706</span></div>
+                        </div>
+                        <button class="u-btn u-btn-unok u-btn-primary ">
+                           <span class="u-icon u-icon-unok"></span>关注
+                       </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-work"></i> /最新作品/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <ul class="section_cnt m-list m-list-3 f-cb">
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main6.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main6.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <a href="">我的作品名</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-activity"></i> /活动进行时/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <div class="section-head-1 section_top">
+                    <img src="../res/images/主题1.jpg" alt="">
+                    <i class="u-icon u-icon-date"></i>
+                    <button class="u-btn u-btn-primary u-btn-p">快来PK</button>
+                    <button class="u-btn u-btn-primary u-btn-p1">邀请小伙伴</button>
+                </div>
+                <div class="section-head-1 section_bottom">
+                    <img src="../res/images/电磁炮.jpg" alt="" class="u-emp">
+                    <p>我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则我是活动规则</p>
+                    <i class="u-icon u-icon-date1"></i>
+                    <img src="../res/images/主题2.jpg" alt="">
+                    <button class="u-btn u-btn-primary u-btn-p">快来PK</button>
+                    <button class="u-btn u-btn-primary u-btn-p1">邀请小伙伴</button>
+                </div>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-original"></i> /我们爱原创/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <ul class="section_cnt m-list">
+                    <li><img src="../res/images/main5.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                </ul>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-colleagues"></i> /我们都是同人粉/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <ul class="section_cnt m-list">
+                    <li><img src="../res/images/main5.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                </ul>
+            </div>
+            <div class="m-section">
+                <h4 class="section_head">
+                    <i class="u-icon u-icon-style u-icon-copy"></i> /看谁临摹的最好/
+                    <span class="section_more">更多
+                    <i class="u-icon u-icon-right u-icon-moreright"></i></span>
+                </h4>
+                <ul class="section_cnt m-list">
+                    <li><img src="../res/images/main5.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main6.jpg" alt=""><a href="">我的作品名</a></li>
+                    <li><img src="../res/images/main7.jpg" alt=""><a href="">我的作品名</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 侧边栏 -->
+        <div class="g-side">
+            <div class="m-side">
+                <div class="m-side-head">
+                    <div class="side_left side_left_1">
+                        <span class="text1">我的作品</span>
+                        <i class="u-icon u-icon-a"></i>
+                    </div>
+                    <div class="side_right">
+                        <i class="u-icon u-icon-bottom"></i>
+                    </div>
+                </div>
+                <div class="m-side-cnt">
+                    <div class="side_img">
+                        <img src="../res/images/work.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="m-side">
+                <div class="m-side-head m-side-head-1">
+                    <div class="side_left side_left_2">
+                        <span>活跃圈子</span>
+                    </div>
+                    <div class="side_left side_left_2 side_right_2 ">
+                        <span>创作圈子</span>
+                    </div>
+
+                </div>
+                <ul class="side-cnt side-cnt-1">
+                    <li>
+                        <img src="../res/images/圈子 1.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>门口小贩</h4>
+                            <span>已圈5221人</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/圈子2.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>原画集中营</h4>
+                            <span>已圈5221人</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>—Horizon—</h4>
+                            <span>已圈5221人</span>
+                        </div>
+                    </li>
+                    <span class="side-cnt-pl">更多
+                        <i class="u-icon u-icon-moreright"></i>
+                    </span>
+                </ul>
+            </div>
+            <div class="m-side">
+                <div class="m-side-head">
+                    <div class="side_left side_left_3">
+                        <span>热门话题</span>
+                    </div>
+                </div>
+                <ul class="side-cnt">
+                    <li><a href="">1.【萝莉学院】你不知道的那些事儿这是标题标题，，，</a></li>
+                    <li><a href="">1.【萝莉学院】你不知道的那些事儿这是标题标题，，，</a></li>
+                    <li><a href="">1.【萝莉学院】你不知道的那些事儿这是标题标题，，，</a></li>
+                    <li><a href="">1.【萝莉学院】你不知道的那些事儿这是标题标题，，，</a></li>
+                    <li><a href="">1.【萝莉学院】你不知道的那些事儿这是标题标题，，，</a></li>
+                    <span class="side-cnt-pl">更多
+                        <i class="u-icon u-icon-moreright"></i>
+                    </span>
+
+                </ul>
+
+            </div>
+            <div class="m-side">
+                <div class="m-side-head m-side-head-1">
+                    <div class="side_left">
+                        <span>排行</span>
+                    </div>
+                    <div class="side_right side_right_1">
+                        <div class="m-tabs m-tabs-1" id="sidetabs">
+                            <ul class="f-cb">
+                                <li class="z-active"><a href="/index">原创</a></li>
+                                <li><a href="/works">同人</a></li>
+                                <li><a href="">临摹</a></li>
+                            </ul>
+                            <!-- <div class="tabs_track">
+                                <div class="tabs_thumb" style="width:68px;left:0px;"></div>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="side-cnt side-cnt-1 side-cnt-2">
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>我是作品名</h4>
+                            <p>作者名</p>
+                            <span>查看&nbsp;2348&nbsp;&nbsp;收藏&nbsp;421</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>我是作品名</h4>
+                            <p>作者名</p>
+                            <span>查看&nbsp;2348&nbsp;&nbsp;收藏&nbsp;421</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>我是作品名</h4>
+                            <p>作者名</p>
+                            <span>查看&nbsp;2348&nbsp;&nbsp;收藏&nbsp;421</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>我是作品名</h4>
+                            <p>作者名</p>
+                            <span>查看&nbsp;2348&nbsp;&nbsp;收藏&nbsp;421</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../res/images/main7.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <h4>我是作品名</h4>
+                            <p>作者名</p>
+                            <span>查看&nbsp;2348&nbsp;&nbsp;收藏&nbsp;421</span>
+                        </div>
+                    </li>
+                    <i class="u-icon u-icon-bottom"></i>
+                </ul>
+            </div>
+            <div class="m-side">
+                <div class="m-side-head">
+                    <div class="side_left side_left_3">
+                        <span>达人排行榜</span>
+                    </div>
+
+                </div>
+                <ul class="side-cnt side-cnt-1 side-cnt-2">
+                    <li>
+                        <img src="/res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <div>Grinch</div>
+                            <span>作品 377&nbsp;&nbsp;粉丝 1706</span>
+                        </div>
+                    </li>
+                    <li><img src="/res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <div>Grinch</div>
+                            <span>作品 377&nbsp;&nbsp;粉丝 1706</span>
+                        </div>
+                    </li>
+                    <li><img src="/res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <div>Grinch</div>
+                            <span>作品 377&nbsp;&nbsp;粉丝 1706</span>
+                        </div>
+                    </li>
+                    <li><img src="/res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <div>Grinch</div>
+                            <span>作品 377&nbsp;&nbsp;粉丝 1706</span>
+                        </div>
+                    </li>
+                    <li><img src="/res/images/圈子3.jpg" alt="">
+                        <div class="side-cnt-text">
+                            <div>Grinch</div>
+                            <span>作品 377&nbsp;&nbsp;粉丝 1706</span>
+                        </div>
+                    </li>
+                    <i class="u-icon u-icon-bottom"></i>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <div class="g-footer f-cb">
+        <div class="g-inner">
+            <div class="m-foot">
+                <a class="u-foot-left f-st">
+                    <p>/ 友情链接 /</p>
+                </a>
+                <a class="u-foot-right f-st">
+                    <p>/ 关于我们 /</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="../common/js/util.js"></script>
+    <script src="../page/index.js"></script>
+
+    <!-- 通用modal -->
+    <!-- <div class="m-modal">
+        <div class="modal_align"></div>
+        <div class="modal_wrap">
+            <div class="modal_head">
+                <a class="u-icon u-icon-close"></a>
+            </div>
+            <div class="modal_body">
+                <div class="login">
+                    <div class="modal_tt"><strong>欢迎回来 </strong><span>还没有账号？<a class="u-link" id="goregister">立即注册</a></span></div>
+                    <form action="" class="m-form m-form-1" id="loginform">
+                        <div class="u-formitem"><input type="text" id="username" placeholder="手机号" class="formitem_ct u-ipt"></div>
+                        <div class="u-formitem u-formitem-1"><input type="password" id="password" placeholder="密码" class="formitem_ct u-ipt"></div>
+                        <div class="u-formitem u-formitem-2">
+                            <label for="remember" class="u-checkox u-checkbox-rember">
+                    <input type="checkbox" id="remember">
+                    <i class="u-icon u-icon-checkbox"></i>
+                    <i class="u-icon u-icon-checkboxchecked"></i>
+                    <span>保持登录</span>
+                </label>
+                            <span class="f-fr">忘记密码？</span>
+                        </div>
+                        <div class="u-error "><span class="u-icon u-icon-error"></span><span id="errormsg"></span></div>
+                        <button class="u-btn u-btn-primary u-btn-st" type="submit">登&nbsp;&nbsp;录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- 登陆模块 -->
+    <!-- <div class="login">
+        <div class="modal_tt"><strong>欢迎回来 </strong><span>还没有账号？<a class="u-link" id="goregister">立即注册</a></span></div>
+        <form action="" class="m-form m-form-1" id="loginform">
+            <div class="u-formitem"><input type="text" id="username" placeholder="手机号" class="formitem_ct u-ipt"></div>
+            <div class="u-formitem u-formitem-1"><input type="password" id="password" placeholder="密码" class="formitem_ct u-ipt"></div>
+            <div class="u-formitem u-formitem-2">
+                <label for="remember" class="u-checkox u-checkbox-rember">
+                    <input type="checkbox" id="remember">
+                    <i class="u-icon u-icon-checkbox"></i>
+                    <i class="u-icon u-icon-checkboxchecked"></i>
+                    <span>保持登录</span>
+                </label>
+                <span class="f-fr">忘记密码？</span>
+            </div>
+            <div class="u-error f-dn"><span class="u-icon u-icon-error"></span><span id="errormsg"></span></div>
+            <button class="u-btn u-btn-primary u-btn-st" type="submit">登&nbsp;&nbsp;录</button>
+        </form>
+    </div> -->
+    <!-- 注册模块 -->
+    <!-- <div class="m-modal">
+        <div class="modal_align"></div>
+        <div class="modal_wrap">
+            <div class="modal_head">
+                <a class="u-icon u-icon-close"></a>
+            </div>
+            <div class="modal_body">
+                <div><img src="../res/images/logo.png" alt=""></div>
+                <form action="" class="m-form" id="registerform">
+                    <div class="u-formitem">
+                        <label for="phone" class="formitem_tt">手机号</label>
+                        <input type="text" name="phone" id="phone" placeholder="请输入11位手机号码" class="foritem_ct u-ipt">
+                    </div>
+                    <div class="u-formitem">
+                        <label for="username" class="formitem_tt">昵称</label>
+                        <input type="text" name="username" id="username" placeholder="中英文均可，至少6个字符" class="foritem_ct u-ipt">
+                    </div>
+                    <div class="u-formitem">
+                        <label for="password" class="formitem_tt">密码</label>
+                        <input type="text" name="password" id="password" placeholder="长度6-16个字符，不包含空格" class="foritem_ct u-ipt">
+                    </div>
+                    <div class="u-formitem">
+                        <label for="password1" class="formitem_tt">确认密码</label>
+                        <input type="text" name="password1" id="password1" placeholder="长度6-16个字符，不包含空格" class="foritem_ct u-ipt">
+                    </div>
+                    <div class="u-formitem">
+                        <label for="">性别</label>
+                        <div class="formitem_ml">
+                            <input type="radio">男
+                            <input type="radio">女
+                        </div>
+                    </div>
+                    <div class="u-formitem">
+                        <label for="" class="formitem">生日</label>
+                        <div class="u-formitem">
+                            <div class="m-cascadeselect" id="birthday"></div>
+                        </div>
+                    </div>
+                    <div class="u-formitem">
+                        <label for="" class="formitem">所在地</label>
+                        <div class="u-formitem">
+                            <div class="m-cascadeselect" id="location"></div>
+                        </div>
+                    </div>
+                    <div class="u-formitem">
+                        <label for="" class="formitem_tt">验证码</label>
+                        <div class="formitem_ct formitem_ct-validate">
+                            <input type="text" name="captcha" id="captcha" class="u-ipt">
+                            <img src="/captcha" alt="" id="captchaimg">
+                        </div>
+                    </div>
+                    <div class="u-error f-dn">
+                        <span class="u-icon-errror"></span><span id="errormsg"></span>
+                    </div>
+                    <button class="u-btn u-btn-primary" type="submit">注&nbsp;&nbsp;册</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
